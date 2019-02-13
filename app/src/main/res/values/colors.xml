@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="loginback">#84a1d4</color>
+    <color name="startcolorlog"> #6441A5</color>
+    <color name="endcolorlog">#2a0845</color>
+    <color name="back1">#360033</color>
+    <color name="back2">#0b8793</color>
+</resources>

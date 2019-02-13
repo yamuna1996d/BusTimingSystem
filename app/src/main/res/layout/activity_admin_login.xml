@@ -1,0 +1,56 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="100"
+    android:background="@drawable/back2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:background="@drawable/background"
+        >
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/tayos"
+            android:src="@drawable/image"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:textColor="#c2c0c0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user"
+            android:textColorHint="#c2c0c0"
+            android:hint="Enter UserName"
+            />
+
+        <EditText
+            android:textColor="#c2c0c0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass"
+            android:textColorHint="#c2c0c0"
+            android:hint="Enter Password"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/loginbutton"
+            android:text="Login"
+            android:textColor="#fff" />
+        </LinearLayout>
+
+</LinearLayout>
