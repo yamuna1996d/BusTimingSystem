@@ -10,15 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AdminLogin">
+        </activity>
+        <activity android:name=".Display" />
+        <activity android:name=".Recyclerview" />
+        <activity android:name=".AdminAddData" />
+        <activity android:name=".AdminUpdate" />
+        <activity android:name=".Intro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Display" />
-        <activity android:name=".Recyclerview"></activity>
-        <activity android:name=".AdminAddData"></activity>
     </application>
 
 </manifest>
