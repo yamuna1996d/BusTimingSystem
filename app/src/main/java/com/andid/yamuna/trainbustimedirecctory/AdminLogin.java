@@ -28,7 +28,7 @@ public class AdminLogin extends AppCompatActivity {
                 s2=ed2.getText().toString();
                 if (s1.equals("admin")&&s2.equals("admin"))
                 {
-                    Intent i=new Intent(getApplicationContext(),Recyclerview.class);
+                    Intent i=new Intent(getApplicationContext(),Dashboard.class);
                     startActivity(i);
 
                 }

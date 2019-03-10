@@ -30,8 +30,13 @@ DatabaseHelper databaseHelper;
                 s2=ed2.getText().toString();
                 s3=ed3.getText().toString();
                 s4=ed4.getText().toString();
-                Toast.makeText(getApplicationContext(),s1,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),s2,Toast.LENGTH_LONG).show();
+                Boolean status=databaseHelper.insertdata(s1,s2,s3,s4);
+                if (status==true){
+                    Toast.makeText(getApplicationContext(),"Succesfully Inserted",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
