@@ -13,13 +13,12 @@ import java.util.ArrayList;
 public class Recyclerview extends AppCompatActivity{
 private RecyclerView recyclerview;
 private ExampleAdapter adapter;
-private Button ade;
+
 private RecyclerView.LayoutManager layoutManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview);
-        ade=(Button)findViewById(R.id.ad);
         ArrayList<exampleitem>arrayList=new ArrayList<>();
         arrayList.add(new exampleitem(R.drawable.ic_directions_bus_black_24dp,"Location"));
         arrayList.add(new exampleitem(R.drawable.ic_directions_bus_black_24dp,"Location1"));
@@ -39,12 +38,6 @@ private RecyclerView.LayoutManager layoutManager;
                 startActivity(r);
             }
         });
-        ade.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent r=new Intent(getApplicationContext(),AdminAddData.class);
-                startActivity(r);
-            }
-        });
+        
     }
 }

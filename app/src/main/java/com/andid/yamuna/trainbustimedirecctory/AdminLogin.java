@@ -1,6 +1,7 @@
 package com.andid.yamuna.trainbustimedirecctory;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +18,12 @@ public class AdminLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
-
+        SharedPreferences sharedPreferences=getSharedPreferences("Login",MODE_PRIVATE);
+        String check=sharedPreferences.getString("username",null);
+        if(check!=null){
+            Intent i=new Intent(getApplicationContext(),Dashboard.class);
+            startActivity(i);
+        }
         ed1=(EditText)findViewById(R.id.user);
         ed2=(EditText)findViewById(R.id.pass);
         b=(Button)findViewById(R.id.login);
@@ -28,6 +34,9 @@ public class AdminLogin extends AppCompatActivity {
                 s2=ed2.getText().toString();
                 if (s1.equals("admin")&&s2.equals("admin"))
                 {
+                    SharedPreferences.Editor obj=getSharedPreferences("login",MODE_PRIVATE).edit();
+                    obj.putString("username",s1);
+                    obj.apply();
                     Intent i=new Intent(getApplicationContext(),Dashboard.class);
                     startActivity(i);
 

@@ -143,5 +143,13 @@
 
     </LinearLayout>
 </android.support.v7.widget.CardView>
-
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/l"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:background="@drawable/loginbutton"
+        />
 </LinearLayout>

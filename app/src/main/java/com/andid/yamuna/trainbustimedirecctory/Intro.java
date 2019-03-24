@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,7 +21,7 @@ private ImageView im;
         Animation animation=AnimationUtils.loadAnimation(this,R.anim.mytransition);
         tv.startAnimation(animation);
         im.startAnimation(animation);
-        final Intent i=new Intent(getApplicationContext(),AdminLogin.class);
+        final Intent i=new Intent(getApplicationContext(),Buttons.class);
 
         Thread timer=new Thread(){
             public void run(){

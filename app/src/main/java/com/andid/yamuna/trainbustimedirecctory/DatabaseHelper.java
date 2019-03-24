@@ -54,4 +54,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor cobj=db.rawQuery("Select * from "+Tablename+" Where "+col2+"= '"+BusCode+"'",null);
         return cobj;
     }
+
+    public Boolean update(String Buscode,String Name,String Route,String Stops){
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(col2,Buscode);
+        contentValues.put(col3,Name);
+        contentValues.put(col4,Route);
+        contentValues.put(col5,Stops);
+        long Status=db.update(Tablename,contentValues,col2 + "=" +Buscode,null);
+        if (Status==-1){
+            return false;
+
+        }
+        else {
+            return true;
+        }
+    }
+    public Boolean busDelete(String getbus){
+        SQLiteDatabase db=this.getWritableDatabase();
+        long status=db.delete(Tablename,col2+"="+getbus,null);
+        if (status==-1){
+            return false;
+
+        }
+        else {
+            return true;
+        }
+    }
 }

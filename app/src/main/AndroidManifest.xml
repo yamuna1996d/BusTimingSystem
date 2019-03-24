@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminLogin"></activity>
+        <activity android:name=".AdminLogin" />
         <activity android:name=".Display" />
         <activity android:name=".Recyclerview" />
         <activity android:name=".AdminAddData" />
@@ -21,7 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".Dashboard" />
+        <activity android:name=".AdminDelete" />
+        <activity android:name=".Buttons"></activity>
     </application>
 
 </manifest>
